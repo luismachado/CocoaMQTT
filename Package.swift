@@ -19,11 +19,6 @@ let package = Package(
         .package(url: "https://github.com/daltoniam/Starscream.git", from: "3.1.1"),
     ],
     targets: [
-        .target(name: "CocoaMQTT",
-                dependencies: [ "CocoaAsyncSocket" ],
-                path: "Source",
-                exclude: ["CocoaMQTTWebSocket.swift"],
-                swiftSettings: [ .define("IS_SWIFT_PACKAGE")]),
         .target(name: "CocoaMQTTWebSocket",
                 dependencies: [ "CocoaMQTT", "Starscream" ],
                 path: "Source",
