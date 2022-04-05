@@ -11,7 +11,6 @@ let package = Package(
         .tvOS(.v10)
     ],
     products: [
-        .library(name: "CocoaMQTT", targets: [ "CocoaMQTT" ]),
         .library(name: "CocoaMQTTWebSocket", targets: [ "CocoaMQTTWebSocket" ])
     ],
     dependencies: [
